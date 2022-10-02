@@ -1,0 +1,20 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["eslint:recommended", "airbnb"],
+  "globals": {},
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "script"
+  },
+  "rules": {
+    "operator-linebreak": "off",
+    "arrow-parens": "off",
+    "implicit-arrow-linebreak": "off",
+    "func-names": "off",
+    "object-curly-newline": "off",
+    "no-plusplus": "off"
+  }
+}
