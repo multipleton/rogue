@@ -8,6 +8,16 @@ body {
   font-size: 20px;
 }
 
+#more-break {
+  background-color: grey;
+  color: black;
+  visibility: hidden;
+}
+
+#more-break::before, #more-break::after {
+  content: "\00a0";
+}
+
 #hud {
   font-size: 25px;
   font-weight: bold;

@@ -10,10 +10,20 @@
 
   <body>
     <div class="center mt-50">
-      <div id="message-box">Press any key to continue...</div>
+      <div id="message-box">
+        <span id="message"></span>
+        <span id="more-break">More</span>
+      </div>
       <canvas id="game-field" class="mt-10" width="800" height="600"></canvas>
       <div id="hud" class="mt-10">HP: 100</div>
     </div>
+
+    <script src="./src/utils/event-emitter.js"></script>
+
+    <script src="./src/handlers/keyboard-handler.js"></script>
+
+    <script src="./src/keyboard.js"></script>
+    <script src="./src/message-box.js"></script>
 
     <script src="main.js"></script>
   </body>
