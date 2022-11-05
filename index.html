@@ -15,15 +15,26 @@
         <span id="more-break">More</span>
       </div>
       <canvas id="game-field" class="mt-10" width="800" height="600"></canvas>
-      <div id="hud" class="mt-10">HP: 100</div>
+      <div id="hud" class="mt-10">
+        <ul>
+          <li>Level:<span id="level"></span></li>
+          <li>Hits:<span id="hits.current"></span>(<span id="hits.max"></span>)</li>
+          <li>Str:<span id="strength.current"></span>(<span id="strength.max"></span>)</li>
+          <li>Gold:<span id="gold"></span></li>
+          <li>Armor:<span id="armor"></span></li>
+        </ul>
+      </div>
     </div>
 
     <script src="./src/utils/event-emitter.js"></script>
+    <script src="./src/utils/objects.js"></script>
+    
+    <script src="./src/renderers/ui-renderer.js"></script>
 
     <script src="./src/handlers/keyboard-handler.js"></script>
 
-    <script src="./src/keyboard.js"></script>
     <script src="./src/message-box.js"></script>
+    <script src="./src/hud.js"></script>
 
     <script src="main.js"></script>
   </body>

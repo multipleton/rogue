@@ -17,6 +17,9 @@
     "implicit-arrow-linebreak": "off",
     "func-names": "off",
     "object-curly-newline": "off",
-    "no-plusplus": "off"
+    "no-plusplus": "off",
+    "no-restricted-syntax": "off",
+    "guard-for-in": "off",
+    "no-continue": "off"
   }
 }

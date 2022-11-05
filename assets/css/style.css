@@ -24,6 +24,19 @@ body {
   color: magenta;
 }
 
+#hud ul {
+  margin: 0;
+  padding: 0;
+}
+
+#hud li {
+  display: inline-block;
+}
+
+#hud li:not(:first-child) {
+  margin-left: 5px;
+}
+
 .center {
   margin-left: auto;
   margin-right: auto;

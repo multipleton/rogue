@@ -1,7 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-function MessageBox(target, more) {
-  this.target = target;
-  this.more = more;
+function MessageBox() {
   this.buffer = [];
   EventEmiter.subscribe('key:Space', () => this.continue());
 }
@@ -37,13 +35,13 @@ MessageBox.prototype.continue = function () {
 };
 
 MessageBox.prototype.print = function (message) {
-  this.target.innerText = message;
+  UIRenderer.write({ message });
 };
 
 MessageBox.prototype.showMore = function () {
-  this.more.style.visibility = 'visible';
+  UIRenderer.show('more-break');
 };
 
 MessageBox.prototype.hideMore = function () {
-  this.more.style.visibility = 'hidden';
+  UIRenderer.hide('more-break');
 };
