@@ -13,6 +13,10 @@ function HUD() {
     gold: 0, // change to something else
     armor: 0,
   };
+  EventEmiter.subscribe('stage:menu', () => this.hide());
+  EventEmiter.subscribe('stage:pause', () => this.hide());
+  EventEmiter.subscribe('stage:game', () => this.show());
+  EventEmiter.subscribe('stage:bot', () => this.show());
 }
 
 HUD.prototype.update = function (indicators) {

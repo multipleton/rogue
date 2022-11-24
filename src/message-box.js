@@ -35,13 +35,16 @@ MessageBox.prototype.continue = function () {
 };
 
 MessageBox.prototype.print = function (message) {
+  // eslint-disable-next-line no-undef
   UIRenderer.write({ message });
 };
 
 MessageBox.prototype.showMore = function () {
+  // eslint-disable-next-line no-undef
   UIRenderer.show('more-break');
 };
 
 MessageBox.prototype.hideMore = function () {
+  // eslint-disable-next-line no-undef
   UIRenderer.hide('more-break');
 };
