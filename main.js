@@ -1,13 +1,20 @@
+// eslint-disable-next-line no-unused-vars
 const field = document.getElementById('game-field');
-const context = field.getContext('2d');
 
-const menuTheme = new Audio('./assets/sound/menu-theme.mp3');
-menuTheme.loop = true;
-menuTheme.play();
+// eslint-disable-next-line no-undef, no-unused-vars
+const messageBox = new MessageBox();
 
-const cover = new Image();
-cover.src = './assets/images/cover.png';
+// eslint-disable-next-line no-undef, no-unused-vars
+const hud = new HUD();
 
-cover.onload = () => {
-  context.drawImage(cover, 0, 0);
-};
+// eslint-disable-next-line no-undef
+const director = new Director();
+
+// eslint-disable-next-line no-undef, no-unused-vars
+const menu = new Menu();
+
+// eslint-disable-next-line no-undef
+const keyboardHandler = new KeyboardHandler();
+document.addEventListener('keydown', keyboardHandler);
+
+director.enter();

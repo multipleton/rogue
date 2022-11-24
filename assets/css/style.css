@@ -8,10 +8,33 @@ body {
   font-size: 20px;
 }
 
+#more-break {
+  background-color: grey;
+  color: black;
+  visibility: hidden;
+}
+
+#more-break::before, #more-break::after {
+  content: "\00a0";
+}
+
 #hud {
   font-size: 25px;
   font-weight: bold;
   color: magenta;
+}
+
+#hud ul {
+  margin: 0;
+  padding: 0;
+}
+
+#hud li {
+  display: inline-block;
+}
+
+#hud li:not(:first-child) {
+  margin-left: 5px;
 }
 
 .center {
